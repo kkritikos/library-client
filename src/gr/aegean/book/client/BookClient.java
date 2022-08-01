@@ -173,6 +173,7 @@ public class BookClient {
     	//Adding two books
     	bc.addBook("isbn1",jaxb);
     	bc.addBook("isbn2",jaxb);
+    	bc.addBook("isbn1",jaxb);
     	
     	//Getting all books in different media types
     	bc.getBooks(html);
@@ -191,6 +192,7 @@ public class BookClient {
     	bc.getBook("isbn1",jaxb);
     	
     	//Deleting first book & checking the deletion
+    	bc.deleteBook("isbn1");
     	bc.deleteBook("isbn1");
     	bc.getBooks(jaxb);
     }
